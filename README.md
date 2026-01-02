@@ -1,16 +1,89 @@
-# React + Vite
+Visual Page Hierarchy Editor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based application that visualizes a website page hierarchy and allows reordering of Home page sections using drag and drop.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Visual representation of a 3-level page hierarchy
 
-## React Compiler
+Automatic layout using Dagre
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Graph rendering using React Flow
 
-## Expanding the ESLint configuration
+Drag & drop reordering of Home page sections using DndKit
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Save and load layout using localStorage
+
+Export hierarchy as JSON
+
+Clean and modular component structure
+
+Built with Tailwind CSS
+
+Tech Stack
+
+React (Vite)
+
+React Flow
+
+Dagre
+
+Dnd Kit
+
+Tailwind CSS
+
+JavaScript
+
+
+How It Works
+Page Hierarchy
+
+Displays a predefined hierarchy:
+
+Home
+
+About, Services, Blog, Contact
+
+Nested subpages under each section
+
+Layout is generated automatically using Dagre.
+
+Home Page Sections
+
+Sections:
+
+Hero
+
+Features
+
+Testimonials
+
+CTA
+
+Footer
+
+Can be reordered using drag and drop.
+
+Order is preserved when saved.
+
+Persistence
+
+Save → stores layout in localStorage
+
+Load → restores saved layout
+
+Export JSON → downloads the hierarchy structure
+
+Notes
+
+This project demonstrates:
+
+Component-based architecture
+
+State management
+
+Drag & drop interactions
+
+Graph-based UI rendering
+
+Clean and maintainable frontend structure
