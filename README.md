@@ -82,6 +82,8 @@ Component-based architecture
 
 State management
 
+live link : https://assesment123.netlify.app/
+
 Drag & drop interactions
 
 Graph-based UI rendering
